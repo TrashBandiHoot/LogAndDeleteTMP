@@ -42,8 +42,6 @@ namespace LogAndDeleteTMP
                     File.Delete(Path.Combine(path, shortFile));
                     count++;
                 }
-
-                Console.WriteLine($"File is {shortFile}, file size is {shortFileSize} in bytes");
             }
 
             using (StreamWriter writer = new StreamWriter(Path.Combine(path, "log.txt"), true)) 

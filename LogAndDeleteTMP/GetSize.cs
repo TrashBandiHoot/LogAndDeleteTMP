@@ -10,8 +10,6 @@ namespace LogAndDeleteTMP
             uint low_bytes = GetCompressedFileSizeW(file, out uint high_bytes);
             ulong size = (ulong)high_bytes << 32 | low_bytes;
 
-            Console.WriteLine(low_bytes);
-
             return size;
         }
         
