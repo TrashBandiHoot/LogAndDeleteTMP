@@ -59,7 +59,7 @@ namespace LogAndDeleteTMP
 
                 var slicedLargeFileArray = (largeFileArray.Take(idx));
 
-                writer.WriteLine($"Files in path {path} are over the size limit");
+                writer.WriteLine($"Files in path {path} that are over the size limit");
 
                 foreach (var item in slicedLargeFileArray)
                 {
